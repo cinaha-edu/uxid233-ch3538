@@ -11,4 +11,5 @@ console.log(greeting);
 console.log(`is_adult = ${is_adult}`);
 console.log(hobbies);
 console.log(profile);
+console.log(`${first_Name} is an adult: ${is_adult}`);
 console.log("Hello, UXID 233!");
