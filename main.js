@@ -1,8 +1,12 @@
 const first_Name = "Cina";
 const last_Name = "Lee";
 const age = 32;
-const greeting = "Hello, I am ${first_Name} ${last_Name}, and I am ${age} years old.";
+const greeting = `Hello, I am ${first_Name} ${last_Name}, and I am ${age} years old.`;
+const is_adult = age >= 18;
+const hobbies = ["coding", "sailing", "swimming"];
 console.log(first_Name + last_Name);
 console.log(`first_Name = ${first_Name}`);
 console.log(greeting);
+console.log(`is_adult = ${is_adult}`);
+console.log(hobbies);
 console.log("Hello, UXID 233!");
