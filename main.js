@@ -1,3 +1,4 @@
-const color = ("blue", "red", "green");
-console.log(color[0-color.length]);
+const first_Name = "Cina";
+console.log(first_Name);
+console.log(`first_Name = $(first_Name)`);
 console.log("Hello, UXID 233!");
