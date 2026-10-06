@@ -97,4 +97,4 @@ const zodiacProfiles = {
         dateRange: start_month + "/" + start_day + " - " + end_month + "/" + end_day
     }
 };
-console.log(zodiacProfiles.Capricorn);
+console.log(zodiacProfiles.Aries);
