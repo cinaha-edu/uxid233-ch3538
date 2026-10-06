@@ -100,9 +100,11 @@ const zodiacProfiles = {
 };
 
 const is_Aquarius = (month, day) => {
-    const profile = zodiacProfiles.Aquarius;
-    return month === profile.start_month && day >= profile.start_day ||
-           month === profile.end_month && day <= profile.end_day;
+    const start_month = zodiacProfiles.Aquarius.start_month;
+    const start_day = zodiacProfiles.Aquarius.start_day;
+    const end_month = zodiacProfiles.Aquarius.end_month;
+    const end_day = zodiacProfiles.Aquarius.end_day;
+    return month == start_month && day >= start_day || month == end_month && day <= end_day;
 };
 
 const user = {
