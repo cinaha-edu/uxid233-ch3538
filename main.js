@@ -70,7 +70,7 @@ const zodiacProfiles = {
         start_day: 22,
         end_month: 12,
         end_day: 21,
-        dateRange: start_day + "/" + start_month + " - " + end_day + "/" + end_month
+        dateRange: start_month + "/" + start_day + " - " + end_month + "/" + end_day
     },
     Capricorn: {
         zodiacName: "Capricorn",
@@ -78,7 +78,7 @@ const zodiacProfiles = {
         start_day: 22,
         end_month: 1,
         end_day: 19,
-        dateRange: start_day + "/" + start_month + " - " + end_day + "/" + end_month
+        dateRange: start_month + "/" + start_day + " - " + end_month + "/" + end_day
     },
     Aquarius: {
         zodiacName: "Aquarius",
@@ -86,7 +86,7 @@ const zodiacProfiles = {
         start_day: 20,
         end_month: 2,
         end_day: 18,
-        dateRange: start_day + "/" + start_month + " - " + end_day + "/" + end_month
+        dateRange: start_month + "/" + start_day + " - " + end_month + "/" + end_day
     },
     Pisces: {
         zodiacName: "Pisces",
@@ -94,7 +94,7 @@ const zodiacProfiles = {
         start_day: 19,
         end_month: 3,
         end_day: 20,
-        dateRange: start_day + "/" + start_month + " - " + end_day + "/" + end_month
+        dateRange: start_month + "/" + start_day + " - " + end_month + "/" + end_day
     }
 };
 console.log(zodiacProfiles.Capricorn);
