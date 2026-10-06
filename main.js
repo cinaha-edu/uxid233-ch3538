@@ -94,7 +94,7 @@ const zodiacProfiles = {
         start_day: 19,
         end_month: 3,
         end_day: 20,
-        dateRange: Pisces.start_month + "/" + Pisces.start_day + " - " + Pisces.end_month + "/" + Pisces.end_day
+        dateRange: this.start_month + "/" + this.start_day + " - " + this.end_month + "/" + this.end_day
     }
 };
-console.log(zodiacProfiles.Aries.dateRange);
+console.log(zodiacProfiles.Pisces.dateRange);
