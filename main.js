@@ -1,51 +1,51 @@
 const zodiacs = [" Aries", " Taurus", " Gemini", " Cancer", " Leo", " Virgo", " Libra", " Scorpio", " Sagittarius", " Capricorn", " Aquarius", " Pisces"];
 const zodiacProfiles = {
     Aries: {
-        name: "Aries",
+        zodiacName: "Aries",
         dateRange: "March 21 - April 19"
     },
     Taurus: {
-        name: "Taurus",
+        zodiacName: "Taurus",
         dateRange: "April 20 - May 20"
     },
     Gemini: {
-        name: "Gemini",
+        zodiacName: "Gemini",
         dateRange: "May 21 - June 20"
     },
     Cancer: {
-        name: "Cancer",
+        zodiacName: "Cancer",
         dateRange: "June 21 - July 22"
     },
     Leo: {
-        name: "Leo",
+        zodiacName: "Leo",
         dateRange: "July 23 - August 22"
     },
     Virgo: {
-        name: "Virgo",
+        zodiacName: "Virgo",
         dateRange: "August 23 - September 22"
     },
     Libra: {
-        name: "Libra",
+        zodiacName: "Libra",
         dateRange: "September 23 - October 22"
     },
     Scorpio: {
-        name: "Scorpio",
+        zodiacName: "Scorpio",
         dateRange: "October 23 - November 21"
     },
     Sagittarius: {
-        name: "Sagittarius",
+        zodiacName: "Sagittarius",
         dateRange: "November 22 - December 21"
     },
     Capricorn: {
-        name: "Capricorn",
+        zodiacName: "Capricorn",
         dateRange: "December 22 - January 19"
     },
     Aquarius: {
-        name: "Aquarius",
+        zodiacName: "Aquarius",
         dateRange: "January 20 - February 18"
     },
     Pisces: {
-        name: "Pisces",
+        zodiacName: "Pisces",
         dateRange: "February 19 - March 20"
     }
 };
