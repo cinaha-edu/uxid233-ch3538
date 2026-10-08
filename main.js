@@ -97,7 +97,7 @@ const signs = {
 
 };
 
-function is_Aquarius(month, day) {
+function isAquarius(month, day) {
     return month == signs.Aquarius.start_month && day >= signs.Aquarius.start_day || month == signs.Aquarius.end_month && day <= signs.Aquarius.end_day;
 }
 
@@ -105,4 +105,4 @@ const user = {
     birthday: ["March", 5] // March 5th
 };
 
-console.log(is_Aquarius(user.birthday[0], user.birthday[1]));
+console.log(isAquarius(user.birthday[0], user.birthday[1]));
