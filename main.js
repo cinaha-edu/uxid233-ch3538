@@ -104,7 +104,7 @@ const zodiacProfiles = {
 };
 
 const is_Aquarius = (month, day) => {
-month == zodiacProfiles.Aquarius.start_month && day >= zodiacProfiles.Aquarius.start_day || month == zodiacProfiles.Aquarius.end_month && day <= zodiacProfiles.Aquarius.end_day;
+return month == zodiacProfiles.Aquarius.start_month && day >= zodiacProfiles.Aquarius.start_day || month == zodiacProfiles.Aquarius.end_month && day <= zodiacProfiles.Aquarius.end_day;
 };
 
 const user = {
