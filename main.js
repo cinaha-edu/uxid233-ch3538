@@ -1,4 +1,8 @@
 const zodiacs = [" Aries", " Taurus", " Gemini", " Cancer", " Leo", " Virgo", " Libra", " Scorpio", " Sagittarius", " Capricorn", " Aquarius", " Pisces"];
+let start_month = "";
+let start_day = 0;
+let end_month = "";
+let end_day = 0;
 
 const zodiacProfiles = {
     Aries: {
@@ -100,11 +104,7 @@ const zodiacProfiles = {
 };
 
 const is_Aquarius = (month, day) => {
-    const start_month = zodiacProfiles.Aquarius.start_month;
-    const start_day = zodiacProfiles.Aquarius.start_day;
-    const end_month = zodiacProfiles.Aquarius.end_month;
-    const end_day = zodiacProfiles.Aquarius.end_day;
-    return month == start_month && day >= start_day || month == end_month && day <= end_day;
+month == zodiacProfiles.Aquarius.start_month && day >= zodiacProfiles.Aquarius.start_day || month == zodiacProfiles.Aquarius.end_month && day <= zodiacProfiles.Aquarius.end_day;
 };
 
 const user = {
