@@ -1,12 +1,6 @@
-const zodiacName = [" Aries", " Taurus", " Gemini", " Cancer", " Leo", " Virgo", " Libra", " Scorpio", " Sagittarius", " Capricorn", " Aquarius", " Pisces"];
-let start_month = "";
-let start_day = 0;
-let end_month = "";
-let end_day = 0;
-
-const zodiacProfiles = {
+const signs = {
     Aries: {
-        zodiacName: "Aries",
+        name: "Aries",
         start_month: "March",
         start_day: 21,
         end_month: "April",
@@ -14,7 +8,7 @@ const zodiacProfiles = {
     },
     
     Taurus: {
-        zodiacName: "Taurus",
+        name: "Taurus",
         start_month: "April",
         start_day: 20,
         end_month: "May",
@@ -22,7 +16,7 @@ const zodiacProfiles = {
     },
 
     Gemini: {
-        zodiacName: "Gemini",
+        name: "Gemini",
         start_month: "May",
         start_day: 21,
         end_month: "June",
@@ -30,7 +24,7 @@ const zodiacProfiles = {
     },
 
     Cancer: {
-        zodiacName: "Cancer",
+        name: "Cancer",
         start_month: "June",
         start_day: 21,
         end_month: "July",
@@ -38,7 +32,7 @@ const zodiacProfiles = {
     },
 
     Leo: {
-        zodiacName: "Leo",
+        name: "Leo",
         start_month: "July",
         start_day: 23,
         end_month: "August",
@@ -46,7 +40,7 @@ const zodiacProfiles = {
     },
 
     Virgo: {
-        zodiacName: "Virgo",
+        name: "Virgo",
         start_month: "August",
         start_day: 23,
         end_month: "September",
@@ -54,7 +48,7 @@ const zodiacProfiles = {
     },
 
     Libra: {
-        zodiacName: "Libra",
+        name: "Libra",
         start_month: "September",
         start_day: 23,
         end_month: "October",
@@ -62,7 +56,7 @@ const zodiacProfiles = {
     },
 
     Scorpio: {
-        zodiacName: "Scorpio",
+        name: "Scorpio",
         start_month: "October",
         start_day: 23,
         end_month: "November",
@@ -70,7 +64,7 @@ const zodiacProfiles = {
     },
 
     Sagittarius: {
-        zodiacName: "Sagittarius",
+        name: "Sagittarius",
         start_month: "November",
         start_day: 22,
         end_month: "December",
@@ -78,7 +72,7 @@ const zodiacProfiles = {
     },
 
     Capricorn: {
-        zodiacName: "Capricorn",
+        name: "Capricorn",
         start_month: "December",
         start_day: 22,
         end_month: "January",
@@ -86,7 +80,7 @@ const zodiacProfiles = {
     },
 
     Aquarius: {
-        zodiacName: "Aquarius",
+        name: "Aquarius",
         start_month: "January",
         start_day: 20,
         end_month: "February",
@@ -94,7 +88,7 @@ const zodiacProfiles = {
     },
 
     Pisces: {
-        zodiacName: "Pisces",
+        name: "Pisces",
         start_month: "February",
         start_day: 19,
         end_month: "March",
@@ -103,9 +97,9 @@ const zodiacProfiles = {
 
 };
 
-const is_Aquarius = (month, day) => {
-return month == zodiacProfiles.Aquarius.start_month && day >= zodiacProfiles.Aquarius.start_day || month == zodiacProfiles.Aquarius.end_month && day <= zodiacProfiles.Aquarius.end_day;
-};
+function is_Aquarius(month, day) {
+    return month == signs.Aquarius.start_month && day >= signs.Aquarius.start_day || month == signs.Aquarius.end_month && day <= signs.Aquarius.end_day;
+}
 
 const user = {
     birthday: ["March", 5] // March 5th
