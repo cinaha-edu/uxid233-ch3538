@@ -8,9 +8,7 @@ const movies = {
         sound: audio/princess_mononoke.mp3,
         image: image/princess_mononoke.jpg,
         text: "Fearless & Strong-headed"
-
     },
-    
     Totoro: {
         name: "My Neighbor Totoro", // elegant, homebody
         start_month: 4,
@@ -21,7 +19,6 @@ const movies = {
         image: image/totoro.jpg,
         text: "Homebody & Steady"
     },
-
     Porco_Rosso: {
         name: "Porco Rosso", // flirty, talkative, extroverted
         start_month: 5,
@@ -31,9 +28,7 @@ const movies = {
         sound: audio/proco_rosso.mp3,
         image: image/proco_rosso.jpg,
         text: "Flirty & Lively"
-
     },
-
     Ponyo: {
         name: "Ponyo", // The Best Month
         start_month: 6,
@@ -44,7 +39,6 @@ const movies = {
         image: image/ponyo.jpg,
         text: "Dependable & Loyal"
     },
-
     Whisper_Heart: {
         name: "Whisper of the Heart", // warmth/creativity, slightly vain
         start_month: 7,
@@ -55,7 +49,6 @@ const movies = {
         image: image/whisper_heart.jpg,
         text: "Creative & Vain"
     },
-
     Arrietty: {
         name: "The Secret World of Arrietty",
         start_month: 8,
@@ -76,7 +69,6 @@ const movies = {
         image: image/kiki.jpg,
         text: "Aesthetic & Daydreamer"
     },
-
     Princess_Kaguya: {
         name: "Princess Kaguya",
         start_month: 10,
@@ -87,7 +79,6 @@ const movies = {
         image: image/princess_kaguya.jpg,
         text: "Calculated & Cautious"
     },
-
     Howl: {
         name: "Howl's Moving Castle",
         start_month: 11,
@@ -98,7 +89,6 @@ const movies = {
         image: image/howl.jpg,
         text: "Loving & Disciplined"
     },
-
     Poppy: {
         name: "From Up on Poppy Hill",
         start_month: 12,
@@ -109,7 +99,6 @@ const movies = {
         image: image/poppy.jpg,
         text: "Mature & Driven"        
     },
-
     Spirited: {
         name: "Spirited Away",
         start_month: 1,
@@ -120,7 +109,6 @@ const movies = {
         image: image/spirited.jpg,
         text: "Esoteric & Independent"        
     },
-
     Heron: {
         name: "The Boy and the Heron",
         start_month: 2,
@@ -131,7 +119,6 @@ const movies = {
         image: image/heron.jpg,
         text: "Romantic & Superstitious"
     }
-
 };
 
 function grabBirthday() {
