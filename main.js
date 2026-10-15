@@ -1,9 +1,9 @@
 const movies = {
     Princess_Mononoke: {
         name: "Princess Mononoke", // Fearless, strong-headed
-        start_month: "March",
+        start_month: 3,
         start_day: 21,
-        end_month: "April",
+        end_month: 4,
         end_day: 19,
         sound: audio/princess_mononoke.mp3,
         image: image/princess_mononoke.jpg,
@@ -13,9 +13,9 @@ const movies = {
     
     Totoro: {
         name: "My Neighbor Totoro", // elegant, homebody
-        start_month: "April",
+        start_month: 4,
         start_day: 20,
-        end_month: "May",
+        end_month: 5,
         end_day: 20,
         sound: audio/totoro.mp3,
         image: image/totoro.jpg,
@@ -24,9 +24,9 @@ const movies = {
 
     Porco_Rosso: {
         name: "Porco Rosso", // flirty, talkative, extroverted
-        start_month: "May",
+        start_month: 5,
         start_day: 21,
-        end_month: "June",
+        end_month: 6,
         end_day: 20,
         sound: audio/proco_rosso.mp3,
         image: image/proco_rosso.jpg,
@@ -36,9 +36,9 @@ const movies = {
 
     Ponyo: {
         name: "Ponyo", // The Best Month
-        start_month: "June",
+        start_month: 6,
         start_day: 21,
-        end_month: "July",
+        end_month: 7,
         end_day: 22,
         sound: audio/ponyo.mp3,
         image: image/ponyo.jpg,
@@ -47,9 +47,9 @@ const movies = {
 
     Whisper_Heart: {
         name: "Whisper of the Heart", // warmth/creativity, slightly vain
-        start_month: "July",
+        start_month: 7,
         start_day: 23,
-        end_month: "August",
+        end_month: 8,
         end_day: 22,
         sound: audio/whisper_heart.mp3,
         image: image/whisper_heart.jpg,
@@ -58,9 +58,9 @@ const movies = {
 
     Arrietty: {
         name: "The Secret World of Arrietty",
-        start_month: "August",
+        start_month: 8,
         start_day: 23,
-        end_month: "September",
+        end_month: 9,
         end_day: 22,
         sound: audio/arrietty.mp3,
         image: image/arrietty.jpg,
@@ -68,9 +68,9 @@ const movies = {
     },
     Kiki: {
         name: "Kiki's Delivery Service", // good aesthetics, conflict avoidant, prone to fantasy
-        start_month: "September",
+        start_month: 9,
         start_day: 23,
-        end_month: "October",
+        end_month: 10,
         end_day: 22,
         sound: audio/kiki.mp3,
         image: image/kiki.jpg,
@@ -79,9 +79,9 @@ const movies = {
 
     Princess_Kaguya: {
         name: "Princess Kaguya",
-        start_month: "October",
+        start_month: 10,
         start_day: 23,
-        end_month: "November",
+        end_month: 11,
         end_day: 21,
         sound: audio/princess_kaguya.mp3,
         image: image/princess_kaguya.jpg,
@@ -90,9 +90,9 @@ const movies = {
 
     Howl: {
         name: "Howl's Moving Castle",
-        start_month: "November",
+        start_month: 11,
         start_day: 22,
-        end_month: "December",
+        end_month: 12,
         end_day: 21,
         sound: audio/howl.mp3,
         image: image/howl.jpg,
@@ -101,9 +101,9 @@ const movies = {
 
     Poppy: {
         name: "From Up on Poppy Hill",
-        start_month: "December",
+        start_month: 12,
         start_day: 22,
-        end_month: "January",
+        end_month: 1,
         end_day: 19,
         sound: audio/poppy.mp3,
         image: image/poppy.jpg,
@@ -112,9 +112,9 @@ const movies = {
 
     Spirited: {
         name: "Spirited Away",
-        start_month: "January",
+        start_month: 1,
         start_day: 20,
-        end_month: "February",
+        end_month: 2,
         end_day: 18,
         sound: audio/spirited.mp3,
         image: image/spirited.jpg,
@@ -123,9 +123,9 @@ const movies = {
 
     Heron: {
         name: "The Boy and the Heron",
-        start_month: "February",
+        start_month: 2,
         start_day: 19,
-        end_month: "March",
+        end_month: 3,
         end_day: 20,
         sound: audio/heron.mp3,
         image: image/heron.jpg,
