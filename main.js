@@ -134,22 +134,22 @@ const movies = {
 
 };
 
+function grabBirthday() {
+    console.log("grabBirthday: grabs birthday from input")
+}
+
 function movieCheck() {
     console.log("movieCheck: checks which movie you are depending on birthday")
 }
 
-function movieOutput() {
-    console.log("movieOutput: display the movie based on your birthday")
-}
-
-function birthdayInput() {
-    console.log("birthdayInput: grabs birthday from input")
+function movieDisplay() {
+    console.log("movieDisplay: display the movie based on your birthday")
 }
 
 function playSound() {
-    console.log('playSound: plays the selected audio clip');
+    console.log("playSound: plays the selected audio clip");
 }
 
 function imageDisplay(){
-    console.log('imageDisplay: displays image of movie')
+    console.log("imageDisplay: displays image of movie")
 }
