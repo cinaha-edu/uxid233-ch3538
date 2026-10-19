@@ -1,142 +1,108 @@
 const movies = {
     Princess_Mononoke: {
-        name: "Princess Mononoke", // Fearless, strong-headed
-        start_month: 3,
-        start_day: 21,
-        end_month: 4,
-        end_day: 19,
-        sound: audio/princess_mononoke.mp3,
-        image: image/princess_mononoke.jpg,
+        title: "Princess Mononoke", // Fearless, strong-headed
+        startMonth: 3,
+        startDay: 21,
+        endMonth: 4,
+        endDay: 19,
         text: "Fearless & Strong-headed"
     },
     Totoro: {
-        name: "My Neighbor Totoro", // elegant, homebody
-        start_month: 4,
-        start_day: 20,
-        end_month: 5,
-        end_day: 20,
-        sound: audio/totoro.mp3,
-        image: image/totoro.jpg,
+        title: "My Neighbor Totoro", // elegant, homebody
+        startMonth: 4,
+        startday: 20,
+        endMonth: 5,
+        endDay: 20,
         text: "Homebody & Steady"
     },
     Porco_Rosso: {
-        name: "Porco Rosso", // flirty, talkative, extroverted
-        start_month: 5,
-        start_day: 21,
-        end_month: 6,
-        end_day: 20,
-        sound: audio/proco_rosso.mp3,
-        image: image/proco_rosso.jpg,
+        title: "Porco Rosso", // flirty, talkative, extroverted
+        startMonth: 5,
+        startDay: 21,
+        endMonth: 6,
+        endDay: 20,
         text: "Flirty & Lively"
     },
     Ponyo: {
-        name: "Ponyo", // The Best Month
-        start_month: 6,
-        start_day: 21,
-        end_month: 7,
-        end_day: 22,
-        sound: audio/ponyo.mp3,
-        image: image/ponyo.jpg,
+        title: "Ponyo", // The Best Month
+        startMonth: 6,
+        startDay: 21,
+        endMonth: 7,
+        endDay: 22,
         text: "Dependable & Loyal"
     },
     Whisper_Heart: {
-        name: "Whisper of the Heart", // warmth/creativity, slightly vain
-        start_month: 7,
-        start_day: 23,
-        end_month: 8,
-        end_day: 22,
-        sound: audio/whisper_heart.mp3,
-        image: image/whisper_heart.jpg,
+        title: "Whisper of the Heart", // warmth/creativity, slightly vain
+        startMonth: 7,
+        startDay: 23,
+        endMonth: 8,
+        endDay: 22,
         text: "Creative & Vain"
     },
     Arrietty: {
-        name: "The Secret World of Arrietty",
-        start_month: 8,
-        start_day: 23,
-        end_month: 9,
-        end_day: 22,
-        sound: audio/arrietty.mp3,
-        image: image/arrietty.jpg,
+        title: "The Secret World of Arrietty",
+        startMonth: 8,
+        startDay: 23,
+        endMonth: 9,
+        endDay: 22,
         text: "Extroverted & Indecisive"
     },
     Kiki: {
-        name: "Kiki's Delivery Service", // good aesthetics, conflict avoidant, prone to fantasy
-        start_month: 9,
-        start_day: 23,
-        end_month: 10,
-        end_day: 22,
-        sound: audio/kiki.mp3,
-        image: image/kiki.jpg,
+        title: "Kiki's Delivery Service", // good aesthetics, conflict avoidant, prone to fantasy
+        startMonth: 9,
+        startDay: 23,
+        endMonth: 10,
+        endDay: 22,
         text: "Aesthetic & Daydreamer"
     },
     Princess_Kaguya: {
-        name: "Princess Kaguya",
-        start_month: 10,
-        start_day: 23,
-        end_month: 11,
-        end_day: 21,
-        sound: audio/princess_kaguya.mp3,
-        image: image/princess_kaguya.jpg,
+        title: "Princess Kaguya",
+        startMonth: 10,
+        startDay: 23,
+        endMonth: 11,
+        endDay: 21,
         text: "Calculated & Cautious"
     },
     Howl: {
-        name: "Howl's Moving Castle",
-        start_month: 11,
-        start_day: 22,
-        end_month: 12,
-        end_day: 21,
-        sound: audio/howl.mp3,
-        image: image/howl.jpg,
+        title: "Howl's Moving Castle",
+        startMonth: 11,
+        startDay: 22,
+        endMonth: 12,
+        endDay: 21,
         text: "Loving & Disciplined"
     },
     Poppy: {
-        name: "From Up on Poppy Hill",
-        start_month: 12,
-        start_day: 22,
-        end_month: 1,
-        end_day: 19,
-        sound: audio/poppy.mp3,
-        image: image/poppy.jpg,
+        title: "From Up on Poppy Hill",
+        startMonth: 12,
+        startDay: 22,
+        endMonth: 1,
+        endDay: 19,
         text: "Mature & Driven"        
     },
     Spirited: {
-        name: "Spirited Away",
-        start_month: 1,
-        start_day: 20,
-        end_month: 2,
-        end_day: 18,
-        sound: audio/spirited.mp3,
-        image: image/spirited.jpg,
+        title: "Spirited Away",
+        startMonth: 1,
+        startDay: 20,
+        endMonth: 2,
+        endDay: 18,
         text: "Esoteric & Independent"        
     },
     Heron: {
-        name: "The Boy and the Heron",
-        start_month: 2,
-        start_day: 19,
-        end_month: 3,
-        end_day: 20,
-        sound: audio/heron.mp3,
-        image: image/heron.jpg,
+        title: "The Boy and the Heron",
+        startMonth: 2,
+        startDay: 19,
+        endMonth: 3,
+        endDay: 20,
         text: "Romantic & Superstitious"
     }
 };
 
-function grabBirthday() {
-    console.log("grabBirthday: grabs birthday from input")
+function getMovieTitle(month, day) {
+    for (const movie in movies) {
+        const mov = movies[movie];
+        if (month == mov.startMonth && mov.endMonth || day >= mov.startDay && day <= mov.endDay)
+            return(mov.title);
+        };
 }
 
-function movieCheck() {
-    console.log("movieCheck: checks which movie you are depending on birthday")
-}
-
-function movieDisplay() {
-    console.log("movieDisplay: display the movie based on your birthday")
-}
-
-function playSound() {
-    console.log("playSound: plays the selected audio clip");
-}
-
-function imageDisplay(){
-    console.log("imageDisplay: displays image of movie")
-}
+console.log(getMovieTitle(11, 17)); 
