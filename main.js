@@ -120,6 +120,21 @@ function getMovieTitle(month, day) {
     return("Impossible birthdate. Please input a proper birthdate.");
 }
 
+const btn = document.querySelector('#getMovie');
+const output = document.querySelector('#output');
+
+
+for (const movie in movies) {
+    const mov = movies[movie];
+    if (output) {
+        const myParagraph = document.createElement('li');
+        myParagraph.textContent = mov.title;
+        output.append(myParagraph);
+    }
+}
+
+
+
 console.log(getMovieTitle(2, 19)); 
 console.log(getMovieTitle(3, 1)); 
 console.log(getMovieTitle(42, 2)); 
