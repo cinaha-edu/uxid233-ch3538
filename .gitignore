@@ -1,0 +1,118 @@
+<!--ADD IMAGES OR SENSITIVE INFO FILES HEREEEEEE-->
+const score = 70;
+const level = 2;
+
+if (score >= 70) {
+    console.log("You Passed!"); 
+} else
+        console.log("You Failed."); {
+        }
+
+switch (level) {
+    case 1:
+        console.log("Beginner");
+        break;
+    case 2:
+        console.log("Intermediate");
+        break;
+    default:
+        console.log("Advanced");
+        break;
+}
+
+// for (let i = 0; i < 11; i + 1) { console.log(i);}
+
+// const input = "March", 5
+//movies.forEach(movies) => {
+//     inpit
+//    }
+
+// for const key in aries
+// console.log (key, aries[key])
+//
+//const movies
+//
+//for const movie name in movies
+//const sign = movies[movies.name]
+//console.log movies.name, sign.element
+//
+//let i = 0
+// while i < 0 
+// console.log(i);
+//i++
+//
+
+const students = [
+    {name: "Alice", score: 95},
+    {name: "Bob", score: 22},
+    {name: "Paul", score: 70},
+    {name: "Amy", score: 70},
+
+]
+
+const studentNumber = students.length; // doesnt need to recalculate length every time loop is played
+
+function gradeFor(score) {
+    if (score >= 90) {
+        return "A";
+    }
+    else if (score >= 80) {
+        return "B"
+
+    }
+    else if (score >= 70) {
+        return "C"
+
+    }
+    else if (score >= 60) {
+        return "D"
+
+    }    
+    return "F"        
+}
+
+console.log(gradeFor(84));
+
+for (const student of students) {
+    const letter = gradeFor(student.score);
+    console.log(`${student.name}: ${student.score} (${letter})`);
+}
+
+for (let i = 0; i < students.length ; i++) {
+    console.log(`${i + 1}, ${students[i].name}`);
+}   
+for (const student of students) {
+        if (student.score < 60) {
+        console.log(`${student.name} needs a check-in.`)
+    }
+};
+
+function getMovie(){
+    for 
+}
+
+function movieCheck() {
+    console.log("movieCheck: checks which movie you are depending on birthday")
+}
+
+function movieDisplay() {
+    console.log("movieDisplay: display the movie based on your birthday")
+}
+
+function playSound() {
+    console.log("playSound: plays the selected audio clip");
+}
+
+function imageDisplay(){
+    console.log("imageDisplay: displays image of movie")
+}
+function grabBirthday(month, day) {
+    for (const key in movies) {
+        if (month == movie.startMonth && month == movie.endMonth && day >= movie.startDay && day <= movie.endDay){
+            return movies.name;
+        }
+    }
+};
+
+console.log()
+
