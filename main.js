@@ -75,7 +75,7 @@ const movies = {
         title: "Howl's Moving Castle",
         startMonth: 11,
         startDay: 22,
-        
+        endStartMonthDay: 30,
         endMonth: 12,
         endDay: 21,
         text: "Loving & Disciplined"
@@ -84,6 +84,7 @@ const movies = {
         title: "From Up on Poppy Hill",
         startMonth: 12,
         startDay: 22,
+        endStartMonthDay: 31,
         endMonth: 1,
         endDay: 19,
         text: "Mature & Driven"        
@@ -108,11 +109,18 @@ const movies = {
     }
 };
 
-function getMovieTitle(month, day) {
+const btn = document.querySelector('#getMovie');
+const output = document.querySelector('#output');
+const dateInput = document.querySelector('#birthday');
+const selectedDate = new Date(dateInput.value);
+const dateGet = selectedDate.getDate() + 1;
+const monthGet = selectedDate.getMonth() + 1;
+
+function getMovieTitle(monthGet, dateGet) {
     for (const movie in movies) {
         const mov = movies[movie];
-        const startMonthDay = (month == mov.startMonth && day >= mov.startDay && day <= mov.endStartMonthDay);
-        const endMonthDay = (month == mov.endMonth && day <= mov.endDay);
+        const startMonthDay = (monthGet == mov.startMonth && dateGet >= mov.startDay && dateGet <= mov.endStartMonthDay);
+        const endMonthDay = (monthGet == mov.endMonth && dateGet <= mov.endDay);
         const wraps = mov.startDay > mov.endDay;
         if (startMonthDay || endMonthDay)
             return(mov.title);
@@ -120,24 +128,13 @@ function getMovieTitle(month, day) {
     return("Impossible birthdate. Please input a proper birthdate.");
 }
 
-const btn = document.querySelector('#getMovie');
-const output = document.querySelector('#output');
-
-
-for (const movie in movies) {
-    const mov = movies[movie];
+btn.addEventListener('click', () => {
     if (output) {
+        const dateGet = selectedDate.getDate() + 1;
+        const monthGet = selectedDate.getMonth() + 1;
         const myParagraph = document.createElement('li');
-        myParagraph.textContent = mov.title;
+        myParagraph.textContent = getMovieTitle(monthGet, dateGet);
         output.append(myParagraph);
     }
-}
-
-
-
-console.log(getMovieTitle(2, 19)); 
-console.log(getMovieTitle(3, 1)); 
-console.log(getMovieTitle(42, 2)); 
-console.log(getMovieTitle(1, 1)); 
-console.log(getMovieTitle(12, 32)); 
+});
 
