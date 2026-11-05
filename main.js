@@ -112,16 +112,12 @@ const movies = {
 const btn = document.querySelector('#getMovie');
 const output = document.querySelector('#output');
 const dateInput = document.querySelector('#birthday');
-const selectedDate = new Date(dateInput.value);
-const dateGet = selectedDate.getDate() + 1;
-const monthGet = selectedDate.getMonth() + 1;
 
 function getMovieTitle(monthGet, dateGet) {
     for (const movie in movies) {
         const mov = movies[movie];
         const startMonthDay = (monthGet == mov.startMonth && dateGet >= mov.startDay && dateGet <= mov.endStartMonthDay);
         const endMonthDay = (monthGet == mov.endMonth && dateGet <= mov.endDay);
-        const wraps = mov.startDay > mov.endDay;
         if (startMonthDay || endMonthDay)
             return(mov.title);
         }
@@ -130,11 +126,12 @@ function getMovieTitle(monthGet, dateGet) {
 
 btn.addEventListener('click', () => {
     if (output) {
-        const dateGet = selectedDate.getDate() + 1;
+        const selectedDate = new Date(dateInput.value);
+        const dateGet = selectedDate.getDate();
         const monthGet = selectedDate.getMonth() + 1;
-        const myParagraph = document.createElement('li');
+        const myParagraph = document.createElement('p');
         myParagraph.textContent = getMovieTitle(monthGet, dateGet);
-        output.append(myParagraph);
+        output.appendChild(myParagraph);
     }
 });
 
