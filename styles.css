@@ -1,17 +1,32 @@
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --dark-accent-darkgray: #3e3e3e;
+  --light-accent-lightgray: #666666;
+
+  --font-bold: 650;
+  --font-size-smallest: 0.75rem;
+  --font-size-base: 1rem;
+  --font-size-bigger: 2rem;
+  --font-size-heading: 3rem;
+  --font-size-heading-2: 2.5rem;
+}
+
+* {
+}
+
+#heading {
+  text-align: center;
+}
 
 #outputArea {
-
-    padding: 2rem;
 }
 
 #output {
-    padding: 2rem;
 }
 
 #signPicOutput {
-
 }
 
 .getMovie {
-
 }
