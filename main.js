@@ -1,150 +1,194 @@
 const movies = {
-    Princess_Mononoke: {
-        title: "Princess Mononoke", // Fearless, strong-headed
-        zodiac: "Aries",
-        startMonth: 3,
-        startDay: 21,
-        endStartMonthDay: 31,
-        endMonth: 4,
-        endDay: 19,
-        text: "Fearless & Strong-headed"
-    },
-    Totoro: {
-        title: "My Neighbor Totoro", // elegant, homebody
-        zodiac: "Taurus",
-        startMonth: 4,
-        endStartMonthDay: 30,
-        startday: 20,
-        endMonth: 5,
-        endDay: 20,
-        text: "Homebody & Steady"
-    },
-    Porco_Rosso: {
-        title: "Porco Rosso", // flirty, talkative, extroverted
-        zodiac: "Gemini",
-        startMonth: 5,
-        startDay: 21,
-        endStartMonthDay: 31,
-        endMonth: 6,
-        endDay: 20,
-        text: "Flirty & Lively"
-    },
-    Ponyo: {
-        title: "Ponyo", // The Best Month
-        zodiac: "Cancer",
-        startMonth: 6,
-        startDay: 21,
-        endStartMonthDay: 30,
-        endMonth: 7,
-        endDay: 22,
-        text: "Dependable & Loyal"
-    },
-    Whisper_Heart: {
-        title: "Whisper of the Heart", // warmth/creativity, slightly vain
-        zodiac: "Leo",
-        startMonth: 7,
-        startDay: 23,
-        endStartMonthDay: 31,
-        endMonth: 8,
-        endDay: 22,
-        text: "Creative & Vain"
-    },
-    Arrietty: {
-        title: "The Secret World of Arrietty",
-        zodiac: "Virgo",
-        startMonth: 8,
-        endStartMonthDay: 31,
-        startDay: 23,
-        endMonth: 9,
-        endDay: 22,
-        text: "Extroverted & Indecisive"
-    },
-    Kiki: {
-        title: "Kiki's Delivery Service", // good aesthetics, conflict avoidant, prone to fantasy
-        zodiac: "Libra",
-        startMonth: 9,
-        startDay: 23,
-        endStartMonthDay: 30,
-        endMonth: 10,
-        endDay: 22,
-        text: "Aesthetic & Daydreamer"
-    },
-    Princess_Kaguya: {
-        title: "Princess Kaguya",
-        zodiac: "Scorpio",
-        startMonth: 10,
-        startDay: 23,
-        endStartMonthDay: 31,
-        endMonth: 11,
-        endDay: 21,
-        text: "Calculated & Cautious"
-    },
-    Howl: {
-        title: "Howl's Moving Castle",
-        zodiac: "Sagittarius",
-        startMonth: 11,
-        startDay: 22,
-        endStartMonthDay: 30,
-        endMonth: 12,
-        endDay: 21,
-        text: "Loving & Disciplined"
-    },
-    Poppy: {
-        title: "From Up on Poppy Hill",
-        zodiac: "Capricorn",
-        startMonth: 12,
-        startDay: 22,
-        endStartMonthDay: 31,
-        endMonth: 1,
-        endDay: 19,
-        text: "Mature & Driven"        
-    },
-    Spirited: {
-        title: "Spirited Away",
-        zodiac: "Aquarius",
-        startMonth: 1,
-        startDay: 20,
-        endStartMonthDay: 31,
-        endMonth: 2,
-        endDay: 18,
-        text: "Esoteric & Independent"        
-    },
-    Heron: {
-        title: "The Boy and the Heron",
-        zodiac: "Pisces",
-        startMonth: 2,
-        startDay: 19,
-        endStartMonthDay: 29,
-        endMonth: 3,
-        endDay: 20,
-        text: "Romantic & Superstitious"
-    }
+  Princess_Mononoke: {
+    title: "Princess Mononoke", // Fearless, strong-headed
+    zodiac: "Aries",
+    startMonth: 3,
+    startDay: 21,
+    endStartMonthDay: 31,
+    endMonth: 4,
+    endDay: 19,
+    text: "Fearless & Strong-headed",
+    pic: "images/Princess_Mononoke.jpg",
+    audio: "audio/mononoke.mp3",
+  },
+  Totoro: {
+    title: "My Neighbor Totoro", // elegant, homebody
+    zodiac: "Taurus",
+    startMonth: 4,
+    endStartMonthDay: 30,
+    startDay: 20,
+    endMonth: 5,
+    endDay: 20,
+    text: "Homebody & Steady",
+    pic: "images/Totoro.jpg",
+  },
+  Porco_Rosso: {
+    title: "Porco Rosso", // flirty, talkative, extroverted
+    zodiac: "Gemini",
+    startMonth: 5,
+    startDay: 21,
+    endStartMonthDay: 31,
+    endMonth: 6,
+    endDay: 20,
+    text: "Flirty & Lively",
+    pic: "images/Porco_Rosso.jpg",
+  },
+  Ponyo: {
+    title: "Ponyo on the Cliff by the Sea", // The Best Month
+    zodiac: "Cancer",
+    startMonth: 6,
+    startDay: 21,
+    endStartMonthDay: 30,
+    endMonth: 7,
+    endDay: 22,
+    text: "Dependable & Loyal",
+    pic: "images/Ponyo.jpg",
+  },
+  Whisper_Heart: {
+    title: "Whisper of the Heart", // warmth/creativity, slightly vain
+    zodiac: "Leo",
+    startMonth: 7,
+    startDay: 23,
+    endStartMonthDay: 31,
+    endMonth: 8,
+    endDay: 22,
+    text: "Creative & Vain",
+    pic: "images/Whisper_Heart.jpg",
+  },
+  Arrietty: {
+    title: "The Secret World of Arrietty",
+    zodiac: "Virgo",
+    startMonth: 8,
+    endStartMonthDay: 31,
+    startDay: 23,
+    endMonth: 9,
+    endDay: 22,
+    text: "Extroverted & Indecisive",
+    pic: "images/Arrietty.jpg",
+  },
+  Kiki: {
+    title: "Kiki's Delivery Service", // good aesthetics, conflict avoidant, prone to fantasy
+    zodiac: "Libra",
+    startMonth: 9,
+    startDay: 23,
+    endStartMonthDay: 30,
+    endMonth: 10,
+    endDay: 22,
+    text: "Aesthetic & Daydreamer",
+    pic: "images/Kiki_PROJ.jpg",
+  },
+  Princess_Kaguya: {
+    title: "The Tale of Princess Kaguya",
+    zodiac: "Scorpio",
+    startMonth: 10,
+    startDay: 23,
+    endStartMonthDay: 31,
+    endMonth: 11,
+    endDay: 21,
+    text: "Calculated & Cautious",
+    pic: "images/Princess_Kaguya.jpg",
+  },
+  Howl: {
+    title: "Howl's Moving Castle",
+    zodiac: "Sagittarius",
+    startMonth: 11,
+    startDay: 22,
+    endStartMonthDay: 30,
+    endMonth: 12,
+    endDay: 21,
+    text: "Loving & Disciplined",
+    pic: "images/Howl.jpg",
+  },
+  Poppy: {
+    title: "From Up on Poppy Hill",
+    zodiac: "Capricorn",
+    startMonth: 12,
+    startDay: 22,
+    endStartMonthDay: 31,
+    endMonth: 1,
+    endDay: 19,
+    text: "Mature & Driven",
+    pic: "images/Poppy.jpg",
+  },
+  Spirited: {
+    title: "Spirited Away",
+    zodiac: "Aquarius",
+    startMonth: 1,
+    startDay: 20,
+    endStartMonthDay: 31,
+    endMonth: 2,
+    endDay: 18,
+    text: "Esoteric & Independent",
+    pic: "images/Spirited.jpg",
+  },
+  Heron: {
+    title: "The Boy and the Heron",
+    zodiac: "Pisces",
+    startMonth: 2,
+    startDay: 19,
+    endStartMonthDay: 29,
+    endMonth: 3,
+    endDay: 20,
+    text: "Romantic & Superstitious",
+    pic: "images/Heron.jpg",
+  },
 };
 
-const btn = document.querySelector('#getMovie');
-const output = document.querySelector('#output');
-const dateInput = document.querySelector('#birthday');
+const submitButton = document.querySelector("#getMovie");
+const output = document.querySelector("#output");
+const picOutput = document.querySelector("#signPicOutput");
+const dateInput = document.querySelector("#birthday");
+const zodiac_buttons = document.querySelector("#zodiac_buttons_container");
 
 function getMovieTitle(month, day) {
-    for (const movie in movies) {
-        const mov = movies[movie];
-        const startMonthDay = (month === mov.startMonth && day >= mov.startDay && day <= mov.endStartMonthDay);
-        const endMonthDay = (month === mov.endMonth && day <= mov.endDay);
-        if (startMonthDay || endMonthDay)
-            return(mov.title);
-        }
-    return("Impossible birthdate. Please input a proper birthdate.");
+  for (const movie in movies) {
+    const mov = movies[movie];
+    const startMonthDay =
+      month === mov.startMonth &&
+      day >= mov.startDay &&
+      day <= mov.endStartMonthDay;
+    const endMonthDay = month === mov.endMonth && day <= mov.endDay;
+    if (startMonthDay || endMonthDay) return mov;
+  }
 }
 
-btn.addEventListener('click', () => {
-    if (output) {
-        const selectedDate = new Date(dateInput.value);
-        const [year, month, day] = dateInput.value.split('-').map(Number);
-        const myParagraph = document.createElement('p');
-        myParagraph.textContent = getMovieTitle(month, day);
-        output.append(myParagraph);
+function create_Zodiac_Button() {
+  for (const movie in movies) {
+    const mov = movies[movie];
+    const abc = document.createElement("button");
+    abc.textContent = mov.zodiac;
+    zodiac_buttons.appendChild(abc);
+    abc.addEventListener("click", () => {
+      const myParagraph = document.createElement("p");
+      const myImage = document.createElement("img");
+      myImage.src = mov.pic;
+      myParagraph.textContent = `You're a ${mov.zodiac}. Your movie is ${mov.title}. You are ${mov.text}.`;
+      output.replaceChildren(myParagraph, myImage);
+      if (mov.audio) {
+        const currentAudio = new Audio(mov.audio);
+        currentAudio.play();
+      }
+    });
+  }
+}
 
-    }
+submitButton.addEventListener("click", () => {
+  if (dateInput.value === "") {
+    // https://www.w3schools.com/tags/att_input_type_date.asp
+    const error = document.createElement("p");
+    error.textContent = "Error: Please enter a birthday.";
+    output.replaceChildren(error); // https://www.w3schools.com/jsref/met_node_replacechild.asp
+    picOutput.replaceChildren();
+  } else {
+    const selectedDate = new Date(dateInput.value);
+    const [year, month, day] = dateInput.value.split("-").map(Number);
+    const moviePull = getMovieTitle(month, day);
+    const myParagraph = document.createElement("p");
+    const myImage = document.createElement("img");
+    myImage.src = moviePull.pic;
+    myParagraph.textContent = `Your movie is ${moviePull.title}. You are ${moviePull.text}.`;
+    output.replaceChildren(myParagraph, myImage);
+  }
 });
 
-
+create_Zodiac_Button();

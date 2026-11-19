@@ -8,21 +8,17 @@
   </head>
   <body>
     <section id="heading">
-      <h1>Studio Ghibli Movie Generator</h1>
-      <p>
-        Input your birthday and get a Studio Ghibli movie that corresponds to
-        your birth date!
-      </p>
+      <h1 class="head1">Studio Ghibli Movie Generator</h1>
+      <h2 class="head2">Input your birthday and get a Studio Ghibli movie!</h2>
     </section>
-    <label>Date Input</label>
-    <section id="input">
-      <input type="date" id="birthday" />
-    </section>
-    <button id="getMovie">Get Movie!</button>
-    <section id="output">
-      <label>Your Studio Ghibli Movie is:</label>
-    </section>
-    <section id="signPicOutput">Sign Picture Output</section>
+    <label for="birthday">Enter your birthday:</label>
+    <input type="date" id="birthday" />
+    <button id="getMovie">Get Movie...</button>
+    <section id="output">Your movie is...</section>
+    <p>OR Select your zodiac!</p>
+
+    <section id="zodiac_buttons_container"></section>
+
     <script src="main.js"></script>
   </body>
 </html>
