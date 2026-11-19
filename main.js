@@ -140,7 +140,7 @@ const output = document.querySelector("#output");
 const picOutput = document.querySelector("#signPicOutput");
 const dateInput = document.querySelector("#birthday");
 const zodiac_buttons = document.querySelector("#zodiac_buttons_container");
-let currentAudio = null;
+let currentAudio = null; // Google Search AI ("How to make my "currentAudio" variable work in the "stop_all_sounds" function)
 
 function getMovieTitle(month, day) {
   for (const movie in movies) {
@@ -198,6 +198,12 @@ submitButton.addEventListener("click", () => {
     myImage.src = moviePull.pic;
     myParagraph.textContent = `Your movie is ${moviePull.title}. You are ${moviePull.text}.`;
     output.replaceChildren(myParagraph, myImage);
+    stop_all_sounds();
+
+    if (moviePull.audio) {
+      currentAudio = new Audio(moviePull.audio);
+      currentAudio.play();
+    }
   }
 });
 
