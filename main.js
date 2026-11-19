@@ -8,7 +8,7 @@ const movies = {
     endMonth: 4,
     endDay: 19,
     text: "Fearless & Strong-headed",
-    pic: "images/Princess_Mononoke.jpg",
+    pic: "images/mononoke.jpg",
     audio: "audio/mononoke.mp3",
   },
   Totoro: {
@@ -20,7 +20,8 @@ const movies = {
     endMonth: 5,
     endDay: 20,
     text: "Homebody & Steady",
-    pic: "images/Totoro.jpg",
+    pic: "images/totoro.jpg",
+    audio: "audio/totoro.mp3",
   },
   Porco_Rosso: {
     title: "Porco Rosso", // flirty, talkative, extroverted
@@ -31,7 +32,7 @@ const movies = {
     endMonth: 6,
     endDay: 20,
     text: "Flirty & Lively",
-    pic: "images/Porco_Rosso.jpg",
+    pic: "images/porco.jpg",
   },
   Ponyo: {
     title: "Ponyo on the Cliff by the Sea", // The Best Month
@@ -42,7 +43,7 @@ const movies = {
     endMonth: 7,
     endDay: 22,
     text: "Dependable & Loyal",
-    pic: "images/Ponyo.jpg",
+    pic: "images/ponyo.jpg",
   },
   Whisper_Heart: {
     title: "Whisper of the Heart", // warmth/creativity, slightly vain
@@ -53,7 +54,7 @@ const movies = {
     endMonth: 8,
     endDay: 22,
     text: "Creative & Vain",
-    pic: "images/Whisper_Heart.jpg",
+    pic: "images/whisper.jpg",
   },
   Arrietty: {
     title: "The Secret World of Arrietty",
@@ -64,7 +65,7 @@ const movies = {
     endMonth: 9,
     endDay: 22,
     text: "Extroverted & Indecisive",
-    pic: "images/Arrietty.jpg",
+    pic: "images/arriety.jpg",
   },
   Kiki: {
     title: "Kiki's Delivery Service", // good aesthetics, conflict avoidant, prone to fantasy
@@ -75,7 +76,7 @@ const movies = {
     endMonth: 10,
     endDay: 22,
     text: "Aesthetic & Daydreamer",
-    pic: "images/Kiki_PROJ.jpg",
+    pic: "images/kikiproj.jpg",
   },
   Princess_Kaguya: {
     title: "The Tale of Princess Kaguya",
@@ -86,7 +87,7 @@ const movies = {
     endMonth: 11,
     endDay: 21,
     text: "Calculated & Cautious",
-    pic: "images/Princess_Kaguya.jpg",
+    pic: "images/kaguya.jpg",
   },
   Howl: {
     title: "Howl's Moving Castle",
@@ -97,7 +98,7 @@ const movies = {
     endMonth: 12,
     endDay: 21,
     text: "Loving & Disciplined",
-    pic: "images/Howl.jpg",
+    pic: "images/howl.jpg",
   },
   Poppy: {
     title: "From Up on Poppy Hill",
@@ -108,7 +109,7 @@ const movies = {
     endMonth: 1,
     endDay: 19,
     text: "Mature & Driven",
-    pic: "images/Poppy.jpg",
+    pic: "images/poppy.jpg",
   },
   Spirited: {
     title: "Spirited Away",
@@ -119,7 +120,7 @@ const movies = {
     endMonth: 2,
     endDay: 18,
     text: "Esoteric & Independent",
-    pic: "images/Spirited.jpg",
+    pic: "images/spirited.jpg",
   },
   Heron: {
     title: "The Boy and the Heron",
@@ -130,7 +131,7 @@ const movies = {
     endMonth: 3,
     endDay: 20,
     text: "Romantic & Superstitious",
-    pic: "images/Heron.jpg",
+    pic: "images/heron.jpg",
   },
 };
 

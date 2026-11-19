@@ -1,4 +1,4 @@
 <!--ADD IMAGES OR SENSITIVE INFO FILES HEREEEEEE-->
-images/
-audio/
- node_modules
+node_modules
+*.jpg
+*.mp3
