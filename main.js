@@ -140,6 +140,7 @@ const output = document.querySelector("#output");
 const picOutput = document.querySelector("#signPicOutput");
 const dateInput = document.querySelector("#birthday");
 const zodiac_buttons = document.querySelector("#zodiac_buttons_container");
+let currentAudio = null;
 
 function getMovieTitle(month, day) {
   for (const movie in movies) {
@@ -153,7 +154,12 @@ function getMovieTitle(month, day) {
   }
 }
 
-function stopSounds() {}
+function stop_all_sounds() {
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+}
 
 function create_Zodiac_Button() {
   for (const movie in movies) {
@@ -167,8 +173,9 @@ function create_Zodiac_Button() {
       myImage.src = mov.pic;
       myParagraph.textContent = `You're a ${mov.zodiac}. Your movie is ${mov.title}. You are ${mov.text}.`;
       output.replaceChildren(myParagraph, myImage);
+      stop_all_sounds();
       if (mov.audio) {
-        const currentAudio = new Audio(mov.audio);
+        currentAudio = new Audio(mov.audio);
         currentAudio.play();
       }
     });
