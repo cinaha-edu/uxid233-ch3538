@@ -154,7 +154,7 @@ function getMovieTitle(month, day) {
   }
 }
 
-function stop_all_sounds() {
+function stopSounds() {
   if (currentAudio) {
     currentAudio.pause();
     currentAudio.currentTime = 0;
@@ -165,15 +165,15 @@ function create_Zodiac_Button() {
   for (const movie in movies) {
     const mov = movies[movie];
     const abc = document.createElement("button");
-    abc.textContent = mov.zodiac;
+    abc.textContent = mov.title;
     zodiac_buttons.appendChild(abc);
     abc.addEventListener("click", () => {
       const myParagraph = document.createElement("p");
       const myImage = document.createElement("img");
       myImage.src = mov.pic;
-      myParagraph.textContent = `You're a ${mov.zodiac}. Your movie is ${mov.title}. You are ${mov.text}.`;
+      myParagraph.textContent = `Your movie is ${mov.title}. You're a ${mov.zodiac}, ${mov.text}.`;
       output.replaceChildren(myParagraph, myImage);
-      stop_all_sounds();
+      stopSounds();
       if (mov.audio) {
         currentAudio = new Audio(mov.audio);
         currentAudio.play();
@@ -196,9 +196,9 @@ submitButton.addEventListener("click", () => {
     const myParagraph = document.createElement("p");
     const myImage = document.createElement("img");
     myImage.src = moviePull.pic;
-    myParagraph.textContent = `Your movie is ${moviePull.title}. You are ${moviePull.text}.`;
+    myParagraph.textContent = `Your movie is ${moviePull.title}. You are a ${moviePull.zodiac}, ${moviePull.text}.`;
     output.replaceChildren(myParagraph, myImage);
-    stop_all_sounds();
+    stopSounds();
 
     if (moviePull.audio) {
       currentAudio = new Audio(moviePull.audio);
@@ -208,3 +208,5 @@ submitButton.addEventListener("click", () => {
 });
 
 create_Zodiac_Button();
+
+// ADD LOCALSTORE FOR EXTRA CREDIT!!!!!!!!!!!!!!!!!!
