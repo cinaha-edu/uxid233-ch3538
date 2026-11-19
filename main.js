@@ -153,6 +153,8 @@ function getMovieTitle(month, day) {
   }
 }
 
+function stopSounds() {}
+
 function create_Zodiac_Button() {
   for (const movie in movies) {
     const mov = movies[movie];
