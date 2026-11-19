@@ -20,7 +20,7 @@ const movies = {
     endMonth: 5,
     endDay: 20,
     text: "Homebody & Steady",
-    pic: "images/totoro.jpg",
+    pic: "images/totoros.jpg",
     audio: "audio/totoro.mp3",
   },
   Porco_Rosso: {
@@ -43,7 +43,7 @@ const movies = {
     endMonth: 7,
     endDay: 22,
     text: "Dependable & Loyal",
-    pic: "images/ponyo.jpg",
+    pic: "images/ponyos.jpg",
   },
   Whisper_Heart: {
     title: "Whisper of the Heart", // warmth/creativity, slightly vain
@@ -65,7 +65,7 @@ const movies = {
     endMonth: 9,
     endDay: 22,
     text: "Extroverted & Indecisive",
-    pic: "images/arriety.jpg",
+    pic: "images/arrietyworld.jpg",
   },
   Kiki: {
     title: "Kiki's Delivery Service", // good aesthetics, conflict avoidant, prone to fantasy
@@ -98,7 +98,7 @@ const movies = {
     endMonth: 12,
     endDay: 21,
     text: "Loving & Disciplined",
-    pic: "images/howl.jpg",
+    pic: "images/howls.jpg",
   },
   Poppy: {
     title: "From Up on Poppy Hill",
@@ -109,7 +109,7 @@ const movies = {
     endMonth: 1,
     endDay: 19,
     text: "Mature & Driven",
-    pic: "images/poppy.jpg",
+    pic: "images/poppyhill.jpg",
   },
   Spirited: {
     title: "Spirited Away",
@@ -120,7 +120,7 @@ const movies = {
     endMonth: 2,
     endDay: 18,
     text: "Esoteric & Independent",
-    pic: "images/spirited.jpg",
+    pic: "images/spiritedaway.jpg",
   },
   Heron: {
     title: "The Boy and the Heron",
@@ -131,7 +131,7 @@ const movies = {
     endMonth: 3,
     endDay: 20,
     text: "Romantic & Superstitious",
-    pic: "images/heron.jpg",
+    pic: "images/boyandheron.jpg",
   },
 };
 
